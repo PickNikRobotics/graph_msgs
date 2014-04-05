@@ -2,4 +2,4 @@
 uint32[] node_ids
 
 # optional cost/weight of each edge. if vector is empty assume all weights are equal (1)
-double[] weights
+float64[] weights
