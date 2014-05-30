@@ -2,8 +2,8 @@
 Changelog for package graph_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.3 (2014-05-30)
+------------------
 * Release to indigo
 * Spelling fix
 * Contributors: Dave Coleman
