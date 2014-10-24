@@ -2,6 +2,11 @@
 Changelog for package graph_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Added header / timestamp
+* Contributors: Dave Coleman
+
 0.0.3 (2014-05-30)
 ------------------
 * Release to indigo
