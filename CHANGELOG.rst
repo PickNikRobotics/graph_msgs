@@ -2,8 +2,8 @@
 Changelog for package graph_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.0 (2014-10-24)
+------------------
 * Added header / timestamp
 * Contributors: Dave Coleman
 
