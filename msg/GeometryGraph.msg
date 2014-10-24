@@ -1,3 +1,6 @@
+# A reference coordinate frame and timestamp
+Header header
+
 # 3D spacial graph
 geometry_msgs/Point[] nodes
 
