@@ -1,13 +1,11 @@
-graph_msgs
-==========
+# graph_msgs
 
 ROS messages for publishing graphs of different data types
 
-Status:
+### Continuous Integration Status
 
- * [![Build Status](https://travis-ci.org/davetcoleman/graph_msgs.svg)](https://travis-ci.org/davetcoleman/graph_msgs) Travis CI
- * [![Devel Job Status](http://jenkins.ros.org/buildStatus/icon?job=devel-indigo-graph_msgs)](http://jenkins.ros.org/job/devel-indigo-graph_msgs) Devel Job Status
- * [![Build Status](http://jenkins.ros.org/buildStatus/icon?job=ros-indigo-graph-msgs_binarydeb_trusty_amd64)](http://jenkins.ros.org/job/ros-indigo-graph-msgs_binarydeb_trusty_amd64/) AMD64 Debian Job Status
+[![Formatting (pre-commit)](https://github.com/PickNikRobotics/graph_msgs/actions/workflows/format.yaml/badge.svg?branch=ros2)](https://github.com/PickNikRobotics/graph_msgs/actions/workflows/format.yaml?query=branch%3Aros2)
+[![Build](https://github.com/PickNikRobotics/graph_msgs/actions/workflows/build.yaml/badge.svg?branch=ros2)](https://github.com/PickNikRobotics/graph_msgs/actions/workflows/build.yaml?query=branch%3Aros2)
 
 ## Supported Graph Types
 
