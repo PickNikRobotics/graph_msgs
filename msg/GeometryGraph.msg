@@ -1,5 +1,5 @@
 # A reference coordinate frame and timestamp
-Header header
+std_msgs/Header header
 
 # 3D spacial graph
 geometry_msgs/Point[] nodes
