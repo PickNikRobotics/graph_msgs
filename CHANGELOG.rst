@@ -2,6 +2,11 @@
 Changelog for package graph_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Port to ROS 2 (`#5 <https://github.com/PickNikRobotics/graph_msgs/issues/5>`_)
+* Contributors: Dave Coleman, Henning Kayser, Tyler Weaver, Vatan Aksoy Tezer
+
 0.1.0 (2014-10-24)
 ------------------
 * Added header / timestamp
