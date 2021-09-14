@@ -2,8 +2,8 @@
 Changelog for package graph_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.0 (2021-09-14)
+------------------
 * Port to ROS 2 (`#5 <https://github.com/PickNikRobotics/graph_msgs/issues/5>`_)
 * Contributors: Dave Coleman, Henning Kayser, Tyler Weaver, Vatan Aksoy Tezer
 
