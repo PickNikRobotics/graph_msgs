@@ -15,13 +15,9 @@ jobs:
     strategy:
       matrix:
         env:
-          - ROS_DISTRO: foxy
+          - ROS_DISTRO: iron
             ROS_REPO: main
-          - ROS_DISTRO: foxy
-            ROS_REPO: testing
-          - ROS_DISTRO: galactic
-            ROS_REPO: main
-          - ROS_DISTRO: galactic
+          - ROS_DISTRO: iron
             ROS_REPO: testing
           - ROS_DISTRO: humble
             ROS_REPO: main
@@ -39,7 +35,7 @@ jobs:
     name: ${{ matrix.env.ROS_DISTRO }}-${{ matrix.env.ROS_REPO }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       # The target directory cache doesn't include the source directory because
       # that comes from the checkout.  See "prepare target_ws for cache" task below
       - name: cache target_ws
