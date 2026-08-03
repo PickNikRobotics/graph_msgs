@@ -2,8 +2,8 @@
 Changelog for package graph_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.1 (2026-08-03)
+------------------
 No message definitions changed in this release; it is CI, packaging and
 licensing only.
 
