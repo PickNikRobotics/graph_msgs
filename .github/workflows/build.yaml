@@ -13,16 +13,29 @@ on:
 jobs:
   industrial_ci:
     strategy:
+      fail-fast: false
       matrix:
         env:
           - ROS_DISTRO: humble
             ROS_REPO: main
           - ROS_DISTRO: humble
             ROS_REPO: testing
-          - ROS_DISTRO: rolling
+          - ROS_DISTRO: jazzy
             ROS_REPO: main
+          - ROS_DISTRO: kilted
+            ROS_REPO: main
+          - ROS_DISTRO: lyrical
+            ROS_REPO: main
+            OS_CODE_NAME: resolute
+          # Rolling's base OS moved to Resolute and its `main` apt repo has no
+          # Resolute packages yet, so a rolling+main job dies in setup_rosdep.
+          # Track `testing`, pin OS_CODE_NAME rather than relying on
+          # industrial_ci's default, and keep it non-blocking until the Resolute
+          # packages are all released.
           - ROS_DISTRO: rolling
             ROS_REPO: testing
+            OS_CODE_NAME: resolute
+            NONBLOCKING: true
     env:
       CCACHE_DIR: ${{ github.workspace }}/.ccache
       BASEDIR: ${{ github.workspace }}/.work
@@ -30,6 +43,7 @@ jobs:
 
     name: ${{ matrix.env.ROS_DISTRO }}-${{ matrix.env.ROS_REPO }}
     runs-on: ubuntu-latest
+    continue-on-error: ${{ matrix.env.NONBLOCKING || false }}
     steps:
       - uses: actions/checkout@v6
       # The target directory cache doesn't include the source directory because
